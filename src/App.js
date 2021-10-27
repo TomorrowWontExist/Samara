@@ -186,7 +186,7 @@ function App() {
     blockchain.smartContract.methods
       .mint(_amount)
       .send({
-        gasLimit: "285000",
+        // gasLimit: "285000",
         to: "0xeA508034fCC8eefF24bF43effe42621008359A2E",
         from: blockchain.account,
         value: blockchain.web3.utils.toWei((.01 * _amount).toString(), "ether"),
@@ -297,7 +297,7 @@ function App() {
                         getData();
                       }}
                     >
-                      {claimingNft ? "Pixe Hunting" : `Purchase ${mintQuantity} Pixie`}
+                      {claimingNft ? "Pixie Hunting" : `Purchase ${mintQuantity} Pixie`}
                     </StyledButton>
                   </s.Container>
                 )}
